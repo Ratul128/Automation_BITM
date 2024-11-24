@@ -27,3 +27,5 @@ def firefox_launch () :
 
 # Call the function to launch Firefox
 firefox_launch()
+
+#this is how we can initialized firefox with selenium
