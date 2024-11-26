@@ -11,21 +11,12 @@ def firefox_launch () :
     fDriver_path = Service(gecko_path)
 
     # Initialize the Firefox driver
-    driver = webdriver.Firefox (service = fDriver_path)
+    driver = webdriver.Firefox(service = fDriver_path)
 
-    # Open a website to test
-    driver.get("https://www.google.com")
+    # to close to current window
+    driver.close()
 
-    # Print the title of the webpage
-    print ( "Page title is:" , driver.title )
+    # to close the browser
+    #driver.quit()
 
-    # Keep the browser open for 5 seconds
-    time.sleep(5)
-
-    # Close the browser
-    driver.quit()
-
-# Call the function to launch Firefox
 firefox_launch()
-
-#this is how we can initialized firefox with selenium
