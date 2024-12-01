@@ -6,7 +6,7 @@ def offline_webpage_launch():
     fDriver_path= Service(gecho_path)
     driver=webdriver.Firefox(service = fDriver_path)
 
-    driver.get("/Users/nurulamin/Desktop/PythonLearning/romanian-baloch627.htm")
+    driver.get("file:///Users/nurulamin/Desktop/PythonLearning/ romanian-baloch627.htm")
 
     driver.close()
 
