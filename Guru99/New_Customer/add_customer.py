@@ -9,3 +9,5 @@ def add_customer_valid():
    guru99_login.login_valid()
 
 add_customer_valid()
+
+#add customer practice
